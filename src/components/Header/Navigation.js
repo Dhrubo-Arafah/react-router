@@ -4,24 +4,31 @@ import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem } from 'reac
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggle=()=>setIsOpen(!isOpen)
+  const toggle = () => setIsOpen(!isOpen)
   return (
     <Navbar color="light" light expand="md">
       <div className="container">
-      <NavbarBrand href="/">Brand</NavbarBrand>
-      <NavbarToggler onClick={ toggle}/>
-      <Collapse isOpen={isOpen} navbar>
-        <Nav className="mx-auto" navbar>
-          <NavItem>
+        <NavbarBrand href="/">Brand</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mx-auto" navbar>
+            <NavItem>
               <NavLink activeClassName="selected" className="nav-link" to="/">Home</NavLink>
-          </NavItem>
-          <NavItem>
+            </NavItem>
+            <NavItem>
               <NavLink activeClassName="selected" className="nav-link" to="/about">About</NavLink>
-          </NavItem>
-          <NavItem>
+            </NavItem>
+            <NavItem>
               <NavLink activeClassName="selected" className="nav-link" to="/dashboard">Dashboard</NavLink>
-          </NavItem>
-          </Nav></Collapse>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                activeClassName="selected"
+                className="nav-link" to="/user">Greetings
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
       </div>
     </Navbar>
   )
