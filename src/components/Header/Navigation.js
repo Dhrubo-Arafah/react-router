@@ -15,16 +15,11 @@ const Navigation = () => {
             <NavItem>
               <NavLink activeClassName="selected" className="nav-link" to="/">Home</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink activeClassName="selected" className="nav-link" to="/about">About</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink activeClassName="selected" className="nav-link" to="/dashboard">Dashboard</NavLink>
-            </NavItem>
+            
             <NavItem>
               <NavLink
                 activeClassName="selected"
-                className="nav-link" to="/user">Greetings
+                className="nav-link" to="/topics">Topics
               </NavLink>
             </NavItem>
           </Nav>

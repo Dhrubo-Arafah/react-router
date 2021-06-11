@@ -2,10 +2,10 @@ import React from 'react'
 import { useLocation } from 'react-router'
 
 const Home = () => {
-  const location = useLocation();
+  const location=useLocation()
   return (
     <div>
-      <h2>{location.pathname}</h2>
+      <h1>{ location.pathname }</h1>
     </div>
   )
 }
